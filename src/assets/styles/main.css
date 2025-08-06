@@ -1,0 +1,408 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  transition: 0.25s;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+  overflow-x: hidden;
+}
+.header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+  box-shadow: 0px 0px 7px #00000025;
+}
+.header-contenedor-logo{
+  width: calc(100% - 30px);
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ec3d22;
+  padding: 15px 15px;
+}
+.header-contenedor-logo{
+  color: #ffffff;
+  font-size: clamp(25px, 2vw, 28px);
+  font-weight: 600;
+}
+.nav{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.nav-ul{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 15px 15px;
+}
+.nav-ul-li{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px 10px;
+  cursor: pointer;
+  padding: 15px 15px;
+  border-bottom: 2px #ffffff solid;
+  list-style: none;
+}
+.nav-ul-li:hover{
+  border-bottom: 2px #000000 solid;
+}
+.nav-ul-li svg{
+  stroke: #000000;
+  fill: transparent;
+  width: 40px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.nav-ul-li a{
+  color: #252525;
+  font-size: clamp(16px, 1.5vw, 19.5px);
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: start;
+  align-content: start;
+}
+.section-encabezado{
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.section-universal{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 50px;
+  grid-gap: 25px 25px;
+  position: relative;
+}
+.imagen-portada{
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.contenedor-superpuesto{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 50px);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 25px;
+  grid-gap: 25px 25px;
+}
+.contenedor-superpuesto h1{
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(26px, 3vw, 45px);
+  text-transform: uppercase;
+}
+.contenedor-superpuesto p{
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(18px, 2vw, 27px);
+}
+.contenedor-superpuesto input{
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: clamp(10px, 1.5vw, 15px);
+  border: none;
+  width: 50%;
+  min-width: 350px;
+}
+.contenedor-superpuesto input:focus{
+  outline-color: #269704; 
+}
+.contenedor-barra-carrusel{
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  width: auto;
+  height: calc(100% - 50px);
+  z-index: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.barra-carrusel{
+  width: 3px;
+  height: 100%;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.barra-carrusel-bola-1, .barra-carrusel-bola-2, .barra-carrusel-bola-3{
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  font-size: 15px;
+  cursor: pointer;
+}
+.barra-carrusel-bola-1{
+  top: 0px;
+  transform: translateX(-11px);
+}
+.barra-carrusel-bola-2{
+  top: calc(50% - 11px);
+  transform: translateX(-11px);
+}
+.barra-carrusel-bola-3{
+  bottom: 0px;
+  transform: translateX(-11px);
+}
+.contenedor-tarjetas{
+  width: calc(100%);
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  grid-gap: 35px 35px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  transform: translateX(-50px);
+  scrollbar-color: #ec3d22 transparent;
+}
+.tarjetas{
+  box-shadow: 0px 2.5px 7px #00000025;
+  border-radius: 15px;
+  width: 325px;
+  min-width: 325px;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.contenedor-imagen-tarjeta{
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  position: relative;
+}
+.imagen-tarjeta{
+  width: 100%;
+  object-fit: cover;
+}
+.contenedor-informacion-tarjeta{
+  padding: 15px 15px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 15px 15px;
+}
+.titulo-tarjeta{
+  color: #000000;
+  font-size: clamp(17px, 1.25vw, 20px);
+  font-weight: 600;
+  width: 100%;
+}
+.descripcion-tarjeta{
+  color: #303030;
+  font-size: clamp(15px, 1vw, 18px);
+  font-weight: 300;
+  width: 100%;
+}
+.boton-tarjeta{
+  background-color: #ffffff;
+  border: 1px solid #ec3d22;
+  color: #ec3d22;
+  padding: 10px 20px;
+  border-radius: 7.5px;
+  font-weight: 600;
+  font-size: clamp(14px, 1vw, 15px);
+  margin-top: 15px;
+}
+.boton-tarjeta:hover{
+  background-color: #ec3d22;
+  color: #ffffff;
+}
+.contenedor-puntos-tarjeta{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  grid-gap: 2.5px 2.5px;
+  cursor: pointer;
+}
+.puntos-tarjeta{
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fondo-gris{
+  background-color: #f3f3f3 !important;
+}
+.imagen-franjas{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fixed-header{
+  position: fixed;
+  z-index: 2;
+}
+.contenedor-h2{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+  grid-gap: 20px 20px;
+}
+.contenedor-h2 h2{
+  color: #252525;
+  font-size: clamp(25px, 2vw, 30px);
+  text-align: start;
+}
+.contenedor-h2 svg{
+  width: 40px;
+}
+.contenedor-tarjetas-gustos{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-tarjetas-gustos-1{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: #269704;
+}
+.contenedor-tarjetas-gustos-2{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.svg-recetas{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 450px;
+  opacity: 30%;
+}
+.contenedor-tarjetas-recetas{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 35px 35px;
+}
+.contenedor-tarjetas-recetas-1{
+  width: 50%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  );
+  gap: 32px;
+  background-color: #269704;
+}
+.tarjeta-recetas{
+  width: 100%;
+  height: 225px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background-color: #303030;
+}
+.imagen-tarjeta-recetas{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+@media screen and (min-width: 0px) and (max-width: 800px){
+  .contenedor-barra-carrusel{
+    left: 30px;
+    top: auto;
+    bottom: 25px;
+    width: calc(100% - 60px);
+    height: auto;
+  }
+  .barra-carrusel{
+    height: 3px;
+    width: 100%;
+  }
+  .barra-carrusel-bola-1{
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    transform: translateY(-8px);
+  }
+  .barra-carrusel-bola-2{
+    width: 20px;
+    height: 20px;
+    top: auto;
+    left: calc(50% - 8px);
+    transform: translateY(-8px);
+  }
+  .barra-carrusel-bola-3{
+    width: 20px;
+    height: 20px;
+    bottom: auto;
+    right: 0px;
+    transform: translateY(-8px);
+  }
+  .nav{
+    display: none;
+  }
+}

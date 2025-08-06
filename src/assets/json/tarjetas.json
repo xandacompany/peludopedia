@@ -1,0 +1,46 @@
+{
+    "tendencias": [
+        {
+            "titulo": "Título",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        },
+        {
+            "titulo": "Título",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        },
+        {
+            "titulo": "Título",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        },
+        {
+            "titulo": "Título",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        },
+        {
+            "titulo": "Título",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        },
+        {
+            "titulo": "Literatura",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        },
+        {
+            "titulo": "Título",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "enlace": "..."
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background-color: antiquewhite;
+            z-index: 1;
+            display: flex;
+            grid-gap: 10px 10px;
+            position: relative;
+        }
+        .cuadrado{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            z-index: 2;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="buscador" placeholder="Escribe un título como 'Literatura'">
+    <button id="boton-buscar">Buscar</button>
+
+    <div class="contenedor-tarjetas" id="id-contenedor-tarjetas-tendencias">
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        let datosGlobales = [];
+
+        // Cargamos el JSON una sola vez
+        fetch('./src/assets/json/tarjetas.json')
+            .then(res => res.json())
+            .then(datos => {
+            datosGlobales = datos.tendencias;
+            })
+            .catch(error => console.error("Error al cargar el JSON:", error));
+
+        document.getElementById('boton-buscar').addEventListener('click', () => {
+            const input = document.getElementById('buscador').value.trim().toLowerCase();
+            const contenedor = document.getElementById('id-contenedor-tarjetas-tendencias');
+            contenedor.innerHTML = ""; // Limpiamos resultados anteriores
+
+            const resultado = datosGlobales.find(item => item.titulo.toLowerCase() === input);
+
+            if (resultado) {
+            const tarjeta = document.createElement("div");
+            tarjeta.classList.add("tarjetas");
+
+            const contenedorimagen = document.createElement("div");
+            contenedorimagen.classList.add("contenedor-imagen-tarjeta");
+
+            const imagen = document.createElement("img");
+            imagen.classList.add("imagen-tarjeta");
+            imagen.src = resultado.miniatura;
+            imagen.alt = resultado.titulo;
+            imagen.title = resultado.titulo;
+
+            const contenedorpuntos = document.createElement("div");
+            contenedorpuntos.classList.add("contenedor-puntos-tarjeta");
+
+            for (let i = 0; i < 3; i++) {
+                const punto = document.createElement("div");
+                punto.classList.add("puntos-tarjeta");
+                contenedorpuntos.appendChild(punto);
+            }
+
+            const contenedorinformacion = document.createElement("div");
+            contenedorinformacion.classList.add("contenedor-informacion-tarjeta");
+
+            const titulo = document.createElement("p");
+            titulo.classList.add("titulo-tarjeta");
+            titulo.textContent = resultado.titulo;
+
+            const descripcion = document.createElement("p");
+            descripcion.classList.add("descripcion-tarjeta");
+            descripcion.textContent = resultado.descripcion;
+
+            const boton = document.createElement("a");
+            boton.classList.add("boton-tarjeta");
+            boton.href = resultado.enlace;
+            boton.textContent = "LEER MÁS";
+
+            tarjeta.appendChild(contenedorimagen);
+            contenedorimagen.appendChild(imagen);
+            contenedorimagen.appendChild(contenedorpuntos);
+
+            tarjeta.appendChild(contenedorinformacion);
+            contenedorinformacion.appendChild(titulo);
+            contenedorinformacion.appendChild(descripcion);
+            contenedorinformacion.appendChild(boton);
+
+            contenedor.appendChild(tarjeta);
+            } else {
+            contenedor.textContent = "No se encontró ningún resultado con ese título.";
+            }
+        });
+        });
+    </script>
+</body>
+</html>
