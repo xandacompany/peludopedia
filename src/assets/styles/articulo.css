@@ -1,0 +1,150 @@
+.section-autor{
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    padding: 50px 50px;
+    grid-gap: 25px 25px;
+    position: relative;
+    background-color: #f8f8f8;
+}
+.section-autor img{
+    height: 75px;
+    width: auto;
+    object-fit: cover;
+    background-color: #252525;
+    border-radius: 100%;
+}
+.section-autor-contenedor-textos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5px 5px;
+}
+.section-autor-contenedor-textos h1{
+    width: 100%;
+    text-align: start;
+    font-size: clamp(25px, 2vw, 35px);
+}
+.section-autor-contenedor-textos p{
+    width: 100%;
+    text-align: start;
+}
+.section-encabezado{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px 50px;
+    gap: 50px 50px;
+}
+.section-encabezado-contenedor-imagen{
+    width: calc(60% - 25px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.section-encabezado-contenedor-imagen img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.section-encabezado-contenedor-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    width: calc(40% - 25px);
+    height: auto;
+}
+.contenedor-mini-seccion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px #ec3d22 solid;
+    padding-bottom: 10px;
+}
+.contenedor-mini-seccion svg{
+    fill: #ec3d22;
+    width: clamp(40px, 4vw, 50px);
+    cursor: pointer;
+}
+.contenedor-mini-seccion svg:hover{
+    transform: rotate(90deg);
+}
+.contenedor-mini-seccion svg:active{
+    fill: #b42610;
+    transform: rotate(90deg) scale(0.9);
+}
+.contenedor-mini-seccion h3{
+    width: auto;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: clamp(20px, 2vw, 25px);
+}
+.section-opciones{
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    padding: 25px 50px;
+    padding-top: 0px;
+    grid-gap: 25px 25px;
+}
+.contenedor-opciones-articulo{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #f4f4f4;
+    gap: 15px 15px;
+    padding: 20px 25px;
+}
+.opciones-articulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px 10px;
+}
+.opciones-articulo svg{
+    width: 27px;
+    cursor: pointer;
+    fill: transparent;
+    stroke: #000000;
+}
+.opciones-articulo svg:hover{
+    fill: #ec3d2250;
+}
+.opciones-articulo svg:active{
+    fill: #ec3d2275;
+}
+.opciones-articulo p{
+    font-weight: 700;
+}
+@media screen and (min-width: 0px) and (max-width: 800px){
+    .section-autor{
+        padding: 20px 20px;
+    }
+    .section-encabezado{
+        padding: 20px 20px;
+    }
+    .section-encabezado-contenedor-imagen{
+        width: 100%;
+    }
+}

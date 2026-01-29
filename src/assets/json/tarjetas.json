@@ -1,46 +1,146 @@
 {
     "tendencias": [
         {
-            "titulo": "Título",
+            "titulo": "Top 5 perros más famosos de hollywood",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
         },
         {
-            "titulo": "Título",
+            "titulo": "Así se recuerdan a los animales el día de muertos",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "enlace": "./src/pages/articulo.html"
         },
         {
-            "titulo": "Título",
+            "titulo": "Top 5 recetas para mascotas diabéticas",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "enlace": "./src/pages/articulo.html"
         },
         {
-            "titulo": "Título",
+            "titulo": "Cuidados para un gatito mayor de edad",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "enlace": "./src/pages/articulo.html"
         },
         {
-            "titulo": "Título",
+            "titulo": "Haz esto si dejas solo a tu perro en casa:",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "enlace": "./src/pages/articulo.html"
         },
         {
-            "titulo": "Literatura",
+            "titulo": "Especies de animales en peligro de extinción",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "enlace": "./src/pages/articulo.html"
         },
         {
-            "titulo": "Título",
+            "titulo": "Estados Unidos y su crueldad animal",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/portadas/1.jpg",
-            "enlace": "..."
+            "enlace": "./src/pages/articulo.html"
+        }
+    ],
+    "vida_animal": [
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        }
+    ],
+    "videos": [
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
+        },
+        {
+            "titulo": "Top 5 perros más famosos de hollywood",
+            "descripcion": "Descripcion",
+            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "./src/pages/articulo.html"
         }
     ]
 }

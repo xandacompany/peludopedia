@@ -1,0 +1,1016 @@
+.section-encabezado{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+.section-tendencias{/* Sección tendencias */
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    grid-gap: 25px 25px;
+    position: relative;
+}
+.section-para-ti{/* Sección para ti */
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    grid-gap: 25px 25px;
+    position: relative;
+    background-color: #141414;
+}
+
+.section-interes {
+    /* Sección interés */
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    grid-gap: 25px 25px;
+    position: relative;
+    background-color: #cccccc25;
+}
+
+.section-videos {
+    /* Sección videos */
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    grid-gap: 25px 25px;
+    position: relative;
+}
+
+.imagen-portada {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.contenedor-tarjetas-interes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-content: center;
+    gap: 50px 50px;
+    overflow-x: auto;
+}
+
+.tarjeta-interes {
+    border-radius: 15px;
+    width: 325px;
+    min-width: 325px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    gap: 25px 25px;
+    padding: 50px 50px;
+}
+
+.tarjeta-interes p {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: clamp(17px, 1.5vw, 20px);
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta-interes svg {
+    width: 75px;
+}
+
+.contenedor-opiniones {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    gap: 30px 30px;
+}
+
+.contenedor-superpuesto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 50px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 25px;
+    grid-gap: 25px 25px;
+}
+
+.contenedor-superpuesto h1 {
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    font-size: clamp(26px, 3vw, 45px);
+    text-transform: uppercase;
+}
+
+.contenedor-superpuesto p {
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    font-size: clamp(18px, 2vw, 27px);
+}
+
+.contenedor-superpuesto input {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: clamp(10px, 1.5vw, 15px);
+    border: none;
+    width: 50%;
+    min-width: 300px;
+}
+
+.contenedor-superpuesto input:focus {
+    outline-color: #269704;
+}
+
+.contenedor-barra-carrusel {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    width: auto;
+    height: calc(100% - 50px);
+    z-index: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barra-carrusel {
+    width: 3px;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.barra-carrusel-bola-1,
+.barra-carrusel-bola-2,
+.barra-carrusel-bola-3 {
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.barra-carrusel-bola-1 {
+    top: 0px;
+    transform: translateX(-11px);
+}
+
+.barra-carrusel-bola-2 {
+    top: calc(50% - 11px);
+    transform: translateX(-11px);
+}
+
+.barra-carrusel-bola-3 {
+    bottom: 0px;
+    transform: translateX(-11px);
+}
+
+.contenedor-tarjetas-vertical {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    grid-gap: 50px 50px;
+}
+
+.contenedor-tarjetas-vertical-parte-1 {
+    width: calc(50% - 25px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    gap: 25px 25px;
+}
+
+.contenedor-tarjetas-vertical-parte-2 {
+    width: calc(50% - 25px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    gap: 30px 30px;
+}
+
+.contenedor-tarjetas-vertical-parte-2 h3 {
+    width: auto;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: clamp(20px, 2vw, 25px);
+}
+
+.contenedor-tarjetas {
+    width: calc(100%);
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 35px 35px;
+    overflow-x: auto;
+    padding-bottom: 40px;
+    scrollbar-color: #ec3d22 transparent;
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.contenedor-tarjetas-videos {
+    width: calc(100%);
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 35px 35px;
+    overflow-x: auto;
+    padding-bottom: 40px;
+    scrollbar-color: #ec3d22 transparent;
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.contenedor-tarjetas-para-ti {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+}
+
+.contenedor-tarjetas-para-ti-imagen {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+}
+
+.contenedor-tarjetas-para-ti-imagen img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenedor-tarjetas-para-ti-texto {
+    width: calc(60% - 80px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    padding: 0px 40px;
+    grid-gap: 25px 0px;
+}
+
+.para-ti-h3 {
+    color: #ffffff;
+    font-size: clamp(20px, 2vw, 30px);
+    font-weight: 600;
+    width: 100%;
+    text-align: start;
+}
+
+.para-ti-parrafo {
+    color: #ffffff;
+    font-size: clamp(16px, 1.25vw, 20px);
+    font-weight: 200;
+    width: 100%;
+    text-align: start;
+}
+
+.contenedor-tarjetas.active {
+    cursor: grabbing;
+    /* cursor mientras arrastra */
+}
+
+.tarjetas {
+    box-shadow: 0px 2.5px 7px #00000025;
+    border-radius: 15px;
+    width: 325px;
+    min-width: 325px;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor-imagen-tarjeta {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.contenedor-informacion-tarjeta {
+    padding: 15px 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 15px 15px;
+}
+
+.tarjetas-verticales {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.tarjetas-videos {
+    box-shadow: 0px 2.5px 7px #00000025;
+    border-radius: 15px;
+    width: 325px;
+    min-width: 325px;
+    height: 450px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.tarjetas-videos-imagen {
+    object-fit: cover;
+    width: 100%;
+}
+
+.tarjetas-videos-texto {
+    color: #ffffff;
+    width: calc(100% - 20px);
+    text-align: start;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    font-weight: 600;
+}
+
+.contenedor-imagen-tarjeta-vertical {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen-tarjeta-vertical {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.contenedor-informacion-tarjeta-vertical {
+    padding: 0px 25px;
+    padding-right: 0px;
+    width: calc(50% - 25px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    grid-gap: 15px 15px;
+}
+
+.titulo-tarjeta {
+    color: #000000;
+    font-size: clamp(17px, 1.25vw, 20px);
+    font-weight: 600;
+    width: 100%;
+}
+
+.titulo-tarjeta-2 {
+    color: #000000;
+    font-size: clamp(16px, 1.5vw, 28px);
+    font-weight: 600;
+    width: 100%;
+}
+
+.descripcion-tarjeta {
+    color: #303030;
+    font-size: clamp(15px, 1vw, 18px);
+    font-weight: 300;
+    width: 100%;
+}
+
+.descripcion-tarjeta-2 {
+    color: #303030;
+    font-size: clamp(13px, 1.15vw, 20px);
+    font-weight: 300;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.boton-tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #ec3d22;
+    color: #ec3d22;
+    padding: 10px 20px;
+    border-radius: 7.5px;
+    font-weight: 600;
+    font-size: clamp(13px, 1vw, 15px);
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.boton-tarjeta:hover {
+    background-color: #ec3d22;
+    color: #ffffff;
+}
+
+.boton-tarjeta-para-ti {
+    background-color: transparent;
+    border: 1px solid #ec3d22;
+    color: #ec3d22;
+    padding: 10px 20px;
+    border-radius: 7.5px;
+    font-weight: 600;
+    font-size: clamp(13px, 1vw, 15px);
+    margin-top: 15px;
+}
+
+.boton-tarjeta-para-ti:hover {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.boton-tarjeta-vida-animal {
+    background-color: #ffffff;
+    border: 1px solid #ec3d22;
+    color: #ec3d22;
+    padding: 5px 20px;
+    border-radius: 7.5px;
+    font-weight: 600;
+    font-size: clamp(11px, 1vw, 15px);
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+}
+
+.boton-tarjeta-vida-animal:hover {
+    background-color: #ec3d22;
+    color: #ffffff;
+}
+
+.tarjeta-frase-de-dia {
+    width: 100%;
+    height: auto;
+    border: 1px #25252525 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 25px;
+    border-radius: 15px;
+}
+
+.tarjeta-frase-de-dia p,
+span {
+    font-size: clamp(18px, 1.5vw, 22px);
+    font-style: oblique;
+}
+
+.tarjeta-frase-de-dia p {
+    text-align: center;
+    width: auto;
+}
+
+.tarjeta-frase-de-dia span {
+    color: #ec3d22;
+}
+
+.tarjeta-opinion {
+    width: calc(50% - 48px);
+    height: auto;
+    border: 1px #25252525 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
+.tarjeta-opinion-informacion {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    gap: 5px 15px;
+}
+
+.tarjeta-opinion-perfil {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: start;
+}
+
+.tarjeta-opinion-nombre {
+    font-weight: 300;
+    font-size: clamp(15px, 1.25vw, 20px);
+    width: 100%;
+    text-align: start;
+}
+
+.tarjeta-opinion-titulo {
+    font-weight: 500;
+    font-size: clamp(18px, 1.5vw, 25px);
+    width: 100%;
+    text-align: start;
+}
+
+.contenedor-mini-seccion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px #ec3d22 solid;
+    padding-bottom: 10px;
+}
+
+.contenedor-mini-seccion svg {
+    fill: #ec3d22;
+    width: clamp(40px, 4vw, 50px);
+    cursor: pointer;
+}
+
+.contenedor-mini-seccion svg:hover {
+    transform: rotate(90deg);
+}
+
+.contenedor-mini-seccion svg:active {
+    fill: #b42610;
+    transform: rotate(90deg) scale(0.9);
+}
+
+.contenedor-puntos-tarjeta {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-gap: 2.5px 2.5px;
+    cursor: pointer;
+}
+
+.puntos-tarjeta {
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen-franjas {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.contenedor-h2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    grid-gap: 20px 20px;
+}
+
+.contenedor-h2 h2 {
+    color: #252525;
+    font-size: clamp(22px, 2vw, 30px);
+    text-align: start;
+}
+
+.contenedor-h2 svg {
+    width: 40px;
+}
+
+.contenedor-h2-3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    grid-gap: 20px 20px;
+    padding: 0px 0px;
+}
+
+.contenedor-h2-3 h2 {
+    color: #252525;
+    font-size: clamp(22px, 2vw, 30px);
+    text-align: start;
+}
+
+.contenedor-h2-3 svg {
+    width: 40px;
+}
+
+.contenedor-tarjetas-gustos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
+    .contenedor-tarjetas-vertical {
+        gap: 25px 25px;
+    }
+
+    .contenedor-tarjetas-vertical-parte-1 {
+        width: calc(50% - 12.5px);
+    }
+
+    .contenedor-tarjetas-vertical-parte-2 {
+        width: calc(50% - 12.5px);
+    }
+
+    .boton-tarjeta-vida-animal {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    .contenedor-tarjetas-vertical {
+        grid-gap: 25px 25px;
+    }
+
+    .contenedor-tarjetas-vertical-parte-1 {
+        width: calc(60% - 12.5px);
+    }
+
+    .contenedor-tarjetas-vertical-parte-2 {
+        width: calc(40% - 12.5px);
+    }
+
+    .contenedor-informacion-tarjeta-vertical {
+        padding: 0px 15px;
+        padding-right: 0px;
+        width: calc(50% - 25px);
+        grid-gap: 10px 15px;
+    }
+
+    .tarjeta-opinion {
+        width: 100%
+    }
+
+    .boton-tarjeta-vida-animal {
+        margin-top: 5px;
+    }
+
+    .titulo-tarjeta-2 {
+        font-size: 15px;
+    }
+
+    .descripcion-tarjeta-2 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .contenedor-tarjetas-vertical {
+        grid-gap: 25px 25px;
+    }
+
+    .contenedor-tarjetas-vertical-parte-1 {
+        width: calc(60% - 12.5px);
+    }
+
+    .contenedor-tarjetas-vertical-parte-2 {
+        width: calc(40% - 12.5px);
+    }
+
+    .contenedor-informacion-tarjeta-vertical {
+        padding: 0px 15px;
+        padding-right: 0px;
+        width: calc(50% - 25px);
+        grid-gap: 10px 15px;
+    }
+
+    .tarjeta-opinion {
+        width: 100%
+    }
+
+    .boton-tarjeta-vida-animal {
+        margin-top: 5px;
+    }
+
+    .titulo-tarjeta-2 {
+        font-size: 15px;
+    }
+
+    .descripcion-tarjeta-2 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .section-tendencias {
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+    }
+
+    .section-para-ti {
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+    }
+
+    .section-interes {
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+    }
+
+    .section-videos {
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+    }
+
+    .contenedor-barra-carrusel {
+        left: 30px;
+        top: auto;
+        bottom: 25px;
+        width: calc(100% - 60px);
+        height: auto;
+    }
+
+    .barra-carrusel {
+        height: 3px;
+        width: 100%;
+    }
+
+    .barra-carrusel-bola-1 {
+        width: 20px;
+        height: 20px;
+        left: 0px;
+        transform: translateY(-8px);
+    }
+
+    .barra-carrusel-bola-2 {
+        width: 20px;
+        height: 20px;
+        top: auto;
+        left: calc(50% - 8px);
+        transform: translateY(-8px);
+    }
+
+    .barra-carrusel-bola-3 {
+        width: 20px;
+        height: 20px;
+        bottom: auto;
+        right: 0px;
+        transform: translateY(-8px);
+    }
+
+    .tarjetas {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .contenedor-imagen-tarjeta {
+        height: 125px;
+    }
+
+    .boton-tarjeta {
+        padding: 7px 12px;
+    }
+
+    .contenedor-h2 svg {
+        width: 35px;
+    }
+
+    .contenedor-h2-3 svg {
+        width: 35px;
+    }
+
+    .svg-recetas {
+        width: 35px;
+    }
+
+    .contenedor-tarjetas-vertical-parte-1 {
+        width: 100%;
+    }
+
+    .contenedor-tarjetas-vertical-parte-2 {
+        width: 100%;
+    }
+
+    .contenedor-imagen-tarjeta-vertical {
+        width: 45%;
+    }
+
+    .contenedor-informacion-tarjeta-vertical {
+        padding: 0px 25px;
+        padding-right: 0px;
+        width: calc(55% - 25px);
+    }
+
+    .contenedor-tarjetas-videos {
+        gap: 10px 10px;
+    }
+
+    .contenedor-tarjetas-para-ti-texto {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .contenedor-tarjetas-para-ti-imagen {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    .titulo-tarjeta-2 {
+        font-size: 21px;
+    }
+
+    .descripcion-tarjeta-2 {
+        font-size: 17px;
+    }
+
+    .boton-tarjeta-vida-animal {
+        margin-top: 15px;
+        font-size: 12.5px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .boton-tarjeta-vida-animal {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .titulo-tarjeta-2 {
+        font-size: 18.5px;
+    }
+
+    .descripcion-tarjeta-2 {
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .contenedor-imagen-tarjeta-vertical {
+        width: 40%;
+    }
+
+    .contenedor-informacion-tarjeta-vertical {
+        padding: 0px 15px;
+        padding-right: 0px;
+        width: calc(60% - 15px);
+        grid-gap: 8px 15px;
+    }
+
+    .boton-tarjeta-vida-animal {
+        margin-top: 7px;
+        padding: 5px 10px;
+    }
+
+    .imagen-tarjeta-vertical {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .tarjetas-videos {
+        width: 225px;
+        min-width: 225px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    .contenedor-imagen-tarjeta-vertical {
+        width: 100%;
+    }
+
+    .contenedor-informacion-tarjeta-vertical {
+        padding: 0px 0px;
+        padding-right: 0px;
+        width: calc(100% - 0px);
+        grid-gap: 8px 15px;
+    }
+
+    .boton-tarjeta-vida-animal {
+        margin-top: 20px;
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .imagen-tarjeta-vertical {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .titulo-tarjeta-2 {
+        font-size: 20px;
+    }
+
+    .descripcion-tarjeta-2 {
+        font-size: 16px;
+    }
+
+    .tarjetas-verticales {
+        gap: 15px 0px;
+    }
+
+    .tarjetas-videos {
+        width: 225px;
+        min-width: 225px;
+        height: 350px;
+    }
+}
+/*
+.descripcion-tarjeta-2{
+color: #303030;
+font-size: clamp(14px, 1.15vw, 20px);
+font-weight: 300;
+width: 100%;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+*/
