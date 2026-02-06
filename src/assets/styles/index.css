@@ -1,10 +1,12 @@
-.section-encabezado{
+.section-encabezado {
     width: 100%;
     height: auto;
     display: flex;
     position: relative;
 }
-.section-tendencias{/* Sección tendencias */
+
+.section-tendencias {
+    /* Sección tendencias */
     width: calc(100% - 100px);
     height: auto;
     display: flex;
@@ -13,7 +15,9 @@
     grid-gap: 25px 25px;
     position: relative;
 }
-.section-para-ti{/* Sección para ti */
+
+.section-para-ti {
+    /* Sección para ti */
     width: calc(100% - 100px);
     height: auto;
     display: flex;
@@ -497,6 +501,45 @@
     color: #ffffff;
 }
 
+.menu-tarjeta {
+    background-color: #ffffff;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 3;
+    padding: 5px 5px;
+    height: auto;
+    gap: 5px 5px;
+    width: 100px;
+    cursor: auto;
+}
+
+.mini-menu-opciones {
+    color: #000000;
+    font-weight: 500;
+    font-size: clamp(13px, 1vw, 15px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mini-menu-opciones:hover {
+    color: #b42610;
+}
+
+.mini-menu-opciones svg {
+    width: 17px;
+    margin-right: 5px;
+}
+
 .boton-tarjeta-vida-animal {
     background-color: #ffffff;
     border: 1px solid #ec3d22;
@@ -697,15 +740,12 @@ span {
     .contenedor-tarjetas-vertical {
         gap: 25px 25px;
     }
-
     .contenedor-tarjetas-vertical-parte-1 {
         width: calc(50% - 12.5px);
     }
-
     .contenedor-tarjetas-vertical-parte-2 {
         width: calc(50% - 12.5px);
     }
-
     .boton-tarjeta-vida-animal {
         margin-top: 10px;
     }
@@ -715,34 +755,27 @@ span {
     .contenedor-tarjetas-vertical {
         grid-gap: 25px 25px;
     }
-
     .contenedor-tarjetas-vertical-parte-1 {
         width: calc(60% - 12.5px);
     }
-
     .contenedor-tarjetas-vertical-parte-2 {
         width: calc(40% - 12.5px);
     }
-
     .contenedor-informacion-tarjeta-vertical {
         padding: 0px 15px;
         padding-right: 0px;
         width: calc(50% - 25px);
         grid-gap: 10px 15px;
     }
-
     .tarjeta-opinion {
         width: 100%
     }
-
     .boton-tarjeta-vida-animal {
         margin-top: 5px;
     }
-
     .titulo-tarjeta-2 {
         font-size: 15px;
     }
-
     .descripcion-tarjeta-2 {
         font-size: 14px;
     }
@@ -752,34 +785,27 @@ span {
     .contenedor-tarjetas-vertical {
         grid-gap: 25px 25px;
     }
-
     .contenedor-tarjetas-vertical-parte-1 {
         width: calc(60% - 12.5px);
     }
-
     .contenedor-tarjetas-vertical-parte-2 {
         width: calc(40% - 12.5px);
     }
-
     .contenedor-informacion-tarjeta-vertical {
         padding: 0px 15px;
         padding-right: 0px;
         width: calc(50% - 25px);
         grid-gap: 10px 15px;
     }
-
     .tarjeta-opinion {
         width: 100%
     }
-
     .boton-tarjeta-vida-animal {
         margin-top: 5px;
     }
-
     .titulo-tarjeta-2 {
         font-size: 15px;
     }
-
     .descripcion-tarjeta-2 {
         font-size: 14px;
     }
@@ -790,22 +816,18 @@ span {
         width: calc(100% - 40px);
         padding: 20px 20px;
     }
-
     .section-para-ti {
         width: calc(100% - 40px);
         padding: 20px 20px;
     }
-
     .section-interes {
         width: calc(100% - 40px);
         padding: 20px 20px;
     }
-
     .section-videos {
         width: calc(100% - 40px);
         padding: 20px 20px;
     }
-
     .contenedor-barra-carrusel {
         left: 30px;
         top: auto;
@@ -813,19 +835,16 @@ span {
         width: calc(100% - 60px);
         height: auto;
     }
-
     .barra-carrusel {
         height: 3px;
         width: 100%;
     }
-
     .barra-carrusel-bola-1 {
         width: 20px;
         height: 20px;
         left: 0px;
         transform: translateY(-8px);
     }
-
     .barra-carrusel-bola-2 {
         width: 20px;
         height: 20px;
@@ -833,7 +852,6 @@ span {
         left: calc(50% - 8px);
         transform: translateY(-8px);
     }
-
     .barra-carrusel-bola-3 {
         width: 20px;
         height: 20px;
@@ -841,59 +859,46 @@ span {
         right: 0px;
         transform: translateY(-8px);
     }
-
     .tarjetas {
         width: 250px;
         min-width: 250px;
     }
-
     .contenedor-imagen-tarjeta {
         height: 125px;
     }
-
     .boton-tarjeta {
         padding: 7px 12px;
     }
-
     .contenedor-h2 svg {
         width: 35px;
     }
-
     .contenedor-h2-3 svg {
         width: 35px;
     }
-
     .svg-recetas {
         width: 35px;
     }
-
     .contenedor-tarjetas-vertical-parte-1 {
         width: 100%;
     }
-
     .contenedor-tarjetas-vertical-parte-2 {
         width: 100%;
     }
-
     .contenedor-imagen-tarjeta-vertical {
         width: 45%;
     }
-
     .contenedor-informacion-tarjeta-vertical {
         padding: 0px 25px;
         padding-right: 0px;
         width: calc(55% - 25px);
     }
-
     .contenedor-tarjetas-videos {
         gap: 10px 10px;
     }
-
     .contenedor-tarjetas-para-ti-texto {
         width: 100%;
         padding: 0%;
     }
-
     .contenedor-tarjetas-para-ti-imagen {
         width: 100%;
     }
@@ -903,11 +908,9 @@ span {
     .titulo-tarjeta-2 {
         font-size: 21px;
     }
-
     .descripcion-tarjeta-2 {
         font-size: 17px;
     }
-
     .boton-tarjeta-vida-animal {
         margin-top: 15px;
         font-size: 12.5px;
@@ -919,11 +922,9 @@ span {
         margin-top: 10px;
         font-size: 12px;
     }
-
     .titulo-tarjeta-2 {
         font-size: 18.5px;
     }
-
     .descripcion-tarjeta-2 {
         font-size: 14.5px;
     }
@@ -933,25 +934,21 @@ span {
     .contenedor-imagen-tarjeta-vertical {
         width: 40%;
     }
-
     .contenedor-informacion-tarjeta-vertical {
         padding: 0px 15px;
         padding-right: 0px;
         width: calc(60% - 15px);
         grid-gap: 8px 15px;
     }
-
     .boton-tarjeta-vida-animal {
         margin-top: 7px;
         padding: 5px 10px;
     }
-
     .imagen-tarjeta-vertical {
         width: 100%;
         height: 100%;
         object-fit: fill;
     }
-
     .tarjetas-videos {
         width: 225px;
         min-width: 225px;
@@ -963,44 +960,39 @@ span {
     .contenedor-imagen-tarjeta-vertical {
         width: 100%;
     }
-
     .contenedor-informacion-tarjeta-vertical {
         padding: 0px 0px;
         padding-right: 0px;
         width: calc(100% - 0px);
         grid-gap: 8px 15px;
     }
-
     .boton-tarjeta-vida-animal {
         margin-top: 20px;
         padding: 7px 12px;
         font-size: 13px;
     }
-
     .imagen-tarjeta-vertical {
         width: 100%;
         height: 100%;
         object-fit: fill;
     }
-
     .titulo-tarjeta-2 {
         font-size: 20px;
     }
-
     .descripcion-tarjeta-2 {
         font-size: 16px;
     }
-
     .tarjetas-verticales {
         gap: 15px 0px;
     }
-
     .tarjetas-videos {
         width: 225px;
         min-width: 225px;
         height: 350px;
     }
 }
+
+
 /*
 .descripcion-tarjeta-2{
 color: #303030;

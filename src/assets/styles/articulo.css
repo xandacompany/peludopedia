@@ -1,4 +1,4 @@
-.section-autor{
+.section-autor {
     width: calc(100% - 100px);
     height: auto;
     display: flex;
@@ -10,31 +10,37 @@
     position: relative;
     background-color: #f8f8f8;
 }
-.section-autor img{
+
+.section-autor img {
     height: 75px;
     width: auto;
     object-fit: cover;
     background-color: #252525;
     border-radius: 100%;
 }
-.section-autor-contenedor-textos{
+
+.section-autor-contenedor-textos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     grid-gap: 5px 5px;
+    position: relative;
 }
-.section-autor-contenedor-textos h1{
+
+.section-autor-contenedor-textos h1 {
     width: 100%;
     text-align: start;
     font-size: clamp(25px, 2vw, 35px);
 }
-.section-autor-contenedor-textos p{
+
+.section-autor-contenedor-textos p {
     width: 100%;
     text-align: start;
 }
-.section-encabezado{
-    width: 100%;
+
+.section-encabezado {
+    width: calc(100% - 100px);
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +48,8 @@
     padding: 50px 50px;
     gap: 50px 50px;
 }
-.section-encabezado-contenedor-imagen{
+
+.section-encabezado-contenedor-imagen {
     width: calc(60% - 25px);
     height: auto;
     display: flex;
@@ -50,13 +57,15 @@
     justify-content: center;
     align-content: center;
 }
-.section-encabezado-contenedor-imagen img{
+
+.section-encabezado-contenedor-imagen img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
 }
-.section-encabezado-contenedor-articulos{
+
+.section-encabezado-contenedor-articulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -64,7 +73,8 @@
     width: calc(40% - 25px);
     height: auto;
 }
-.contenedor-mini-seccion{
+
+.contenedor-mini-seccion {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -74,25 +84,30 @@
     border-bottom: 4px #ec3d22 solid;
     padding-bottom: 10px;
 }
-.contenedor-mini-seccion svg{
+
+.contenedor-mini-seccion svg {
     fill: #ec3d22;
     width: clamp(40px, 4vw, 50px);
     cursor: pointer;
 }
-.contenedor-mini-seccion svg:hover{
+
+.contenedor-mini-seccion svg:hover {
     transform: rotate(90deg);
 }
-.contenedor-mini-seccion svg:active{
+
+.contenedor-mini-seccion svg:active {
     fill: #b42610;
     transform: rotate(90deg) scale(0.9);
 }
-.contenedor-mini-seccion h3{
+
+.contenedor-mini-seccion h3 {
     width: auto;
     text-align: start;
     text-transform: uppercase;
     font-size: clamp(20px, 2vw, 25px);
 }
-.section-opciones{
+
+.section-opciones {
     width: calc(100% - 100px);
     height: auto;
     display: flex;
@@ -103,7 +118,8 @@
     padding-top: 0px;
     grid-gap: 25px 25px;
 }
-.contenedor-opciones-articulo{
+
+.contenedor-opciones-articulo {
     border-radius: 15px;
     width: 100%;
     height: auto;
@@ -115,36 +131,249 @@
     gap: 15px 15px;
     padding: 20px 25px;
 }
-.opciones-articulo{
+
+.opciones-articulo {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
     gap: 10px 10px;
 }
-.opciones-articulo svg{
+
+.opciones-articulo svg {
     width: 27px;
     cursor: pointer;
     fill: transparent;
     stroke: #000000;
 }
-.opciones-articulo svg:hover{
+
+.opciones-articulo svg:hover {
     fill: #ec3d2250;
 }
-.opciones-articulo svg:active{
+
+.opciones-articulo svg:active {
     fill: #ec3d2275;
 }
-.opciones-articulo p{
+
+.opciones-articulo p {
     font-weight: 700;
 }
-@media screen and (min-width: 0px) and (max-width: 800px){
-    .section-autor{
+
+.contenedor-tarjetas-recomedados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 0px 0px 0px;
+    gap: 15px 15px;
+}
+
+.tarjetas-recomedados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imagen-tarjeta-recomendaros {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.contenedor-textos-tarjeta-recomendados {
+    width: calc(70% - 30px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    gap: 20px 20px;
+    padding: 0px 15px 0px 15px;
+}
+
+.texto-titulo-tarjeta-recomendados {
+    padding: 0%;
+    margin: 0%;
+    width: calc(100%);
+}
+
+.texto-descripcion-tarjeta-recomendados {
+    padding: 0%;
+    margin: 0%;
+    width: calc(100%);
+}
+
+.contenedor-opciones-flotantes {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 15px 15px;
+}
+
+.contenedor-opciones-flotantes svg {
+    width: 27px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.articulo {
+    width: calc(100% - 100px);
+    padding: 25px 50px;
+}
+
+.articulo h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 4px #ec3d22 solid;
+    margin-bottom: 50px;
+}
+
+.articulo h2 {
+    width: 100%;
+    text-align: start;
+    margin: 0%;
+    padding: 0%;
+    margin: 30px 0px 15px 0px;
+}
+
+.articulo p {
+    width: 100%;
+    text-align: start;
+    margin: 0%;
+    padding: 0%;
+    margin: 10px 0px;
+}
+
+.share-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#id-compartir-encabezado {
+    cursor: pointer;
+}
+
+.share-popup {
+    position: absolute;
+    bottom: 120%;
+    left: 0;
+    transform: translateX(0);
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    display: none;
+    z-index: 100;
+}
+
+.share-popup.active {
+    display: block;
+}
+
+.share-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.share-carousel {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.share-carousel::-webkit-scrollbar {
+    height: 5px;
+}
+
+.share-carousel::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.share-card {
+    min-width: 70px;
+    height: 80px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.share-card span {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.share-card:hover {
+    background: #eaeaea;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .section-autor {
         padding: 20px 20px;
     }
-    .section-encabezado{
+    .section-encabezado {
+        width: calc(100% - 40px);
         padding: 20px 20px;
     }
-    .section-encabezado-contenedor-imagen{
+    .section-encabezado-contenedor-imagen {
         width: 100%;
+    }
+    .section-encabezado-contenedor-articulos {
+        width: calc(100% - 0px);
+    }
+    .tarjetas-recomedados {
+        width: 300px;
+        min-width: 300px;
+    }
+    .imagen-tarjeta-recomendaros {
+        width: 100%;
+    }
+    .contenedor-textos-tarjeta-recomendados {
+        width: 100%;
+        padding: 10px 0px 0px 0px;
+    }
+    .section-opciones {
+        width: calc(100% - 40px);
+        padding: 25px 20px;
+    }
+    .section-autor {
+        width: calc(100% - 50px);
+        padding: 25px 25px;
+    }
+    .contenedor-tarjetas-recomedados {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .articulo {
+        width: calc(100% - 40px);
+        padding: 25px 20px;
     }
 }

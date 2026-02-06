@@ -1,50 +1,48 @@
 {
-    "tendencias": [
-        {
+    "tendencias": [{
             "titulo": "Top 5 perros más famosos de hollywood",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
-            "enlace": "./src/pages/articulo.html"
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
+            "enlace": "/src/pages/articulo.html"
         },
         {
             "titulo": "Así se recuerdan a los animales el día de muertos",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
             "enlace": "./src/pages/articulo.html"
         },
         {
             "titulo": "Top 5 recetas para mascotas diabéticas",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
             "enlace": "./src/pages/articulo.html"
         },
         {
             "titulo": "Cuidados para un gatito mayor de edad",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
             "enlace": "./src/pages/articulo.html"
         },
         {
             "titulo": "Haz esto si dejas solo a tu perro en casa:",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
             "enlace": "./src/pages/articulo.html"
         },
         {
             "titulo": "Especies de animales en peligro de extinción",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
             "enlace": "./src/pages/articulo.html"
         },
         {
             "titulo": "Estados Unidos y su crueldad animal",
             "descripcion": "Descripcion",
-            "miniatura": "./src/assets/images/portadas/1.jpg",
+            "miniatura": "/src/assets/images/miniaturas/perros_ricos.png",
             "enlace": "./src/pages/articulo.html"
         }
     ],
-    "vida_animal": [
-        {
+    "vida_animal": [{
             "titulo": "Top 5 perros más famosos de hollywood",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
@@ -93,8 +91,7 @@
             "enlace": "./src/pages/articulo.html"
         }
     ],
-    "videos": [
-        {
+    "videos": [{
             "titulo": "Top 5 perros más famosos de hollywood",
             "descripcion": "Descripcion",
             "miniatura": "./src/assets/images/miniaturas/perros_ricos.png",
